@@ -1,0 +1,55 @@
+:root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --primaryColorLight: hsl(14, 96%, 91%);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --borderRadius: 3rem;
+}
+.review {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column; /* Center vertically and horizontally */
+}
+
+.secContainer {
+  max-width: 800px; /* Adjust max-width as needed */
+}
+
+.textDiv {
+  margin-bottom: 2rem; /* Add some margin between text and stars */
+}
+
+.redText {
+  color: orange; /* Change color to orange */
+}
+
+.stars {
+  gap: 0.4rem;
+  padding: 1rem 0;
+}
+
+.clientImages {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap; /* Wrap images */
+}
+
+.clientImages img {
+  height: 100px; /* Increase the height */
+  width: 100px; /* Increase the width */
+  border-radius: 90%; /* Make images circular */
+}

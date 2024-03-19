@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
+
+:root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --blackColor: hsl(0, 0%, 18%);
+  --h3FontSize: 1rem;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  position: fixed;
+  border-bottom: 1.5px solid whitesmoke;
+  z-index: 1000;
+  background-color: #f9f9f9; /* Light background color */
+}
+.logoDiv {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+
+  span {
+    color: var(--blackColor);
+    font-size: 1.5rem; /* Increase the font size for the logo */
+    font-weight: bold; /* Optionally increase font weight for emphasis */
+  }
+}
+
+.menu {
+  display: none;
+}
+
+.menu.showNavbar {
+  display: block;
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.menu li {
+  font-size: 1.2rem; /* Adjust font size as needed */
+  font-weight: bold; /* Make menu items bold */
+  padding: 1rem 0;
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Add transition effect for color change */
+
+  &:hover {
+    color: var(--primaryColor); /* Change color on hover */
+  }
+}
+.menu li {
+  font-size: 1.2rem; /* Adjust font size as needed */
+  font-weight: bold; /* Make menu items bold */
+  padding: 1rem 0;
+  text-align: center;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Add transition effect for color change */
+
+  &:hover {
+    color: var(--primaryColor); /* Change color on hover */
+  }
+}
+.menu .menuIcon {
+  font-size: 2rem; /* Increase the font size for the menu icon */
+  cursor: pointer;
+}
+
+.signUpBtn {
+  background-color: #ff6f61; /* Nice color for the background */
+  color: #fff; /* White text color */
+  font-size: var(--h3FontSize);
+  padding: 0.7rem 1.5rem; /* Adjust padding as needed */
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #ff564b; /* Darker shade on hover */
+  }
+}

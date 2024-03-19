@@ -1,0 +1,109 @@
+/* Home.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Salsa&display=swap");
+
+:root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --blackColor: hsl(0, 0%, 18%);
+  --whiteColor: #fff;
+  --biggestFontSize: 2rem;
+  --h3FontSize: 1rem;
+  --primaryHue: 14; /* Hue value of primary color */
+  --primarySaturation: 90%; /* Saturation value of primary color */
+  --primaryLightness: 53%; /* Lightness value of primary color */
+}
+
+.Home {
+  position: relative;
+  height: 95vh;
+  width: 100%;
+  top: 0;
+}
+
+.videoBg {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.videoBg video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black overlay */
+}
+
+.sectionText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--whiteColor);
+  padding: 0 1.3rem;
+  text-align: center;
+  z-index: 1; /* Ensure text is above the overlay */
+
+  h1 {
+    font-size: var(--biggestFontSize);
+    font-weight: 700; /* Increase font weight for boldness */
+    margin-bottom: 1rem;
+  }
+
+  p {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+
+  .btn {
+    gap: 0.5rem;
+    padding: 0.7rem 2rem; /* Increase padding to make the button slightly bigger */
+    font-size: var(--h3FontSize);
+    font-weight: 700; /* Increase font weight for boldness */
+    background-color: var(
+      --primaryColor
+    ); /* Change button background color to orange */
+    color: var(--whiteColor);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+  }
+
+  .btn:hover {
+    background-color: hsl(
+      var(--primaryHue),
+      calc(var(--primarySaturation) - 10%),
+      var(--primaryLightness)
+    ); /* Darken button color on hover */
+    color: var(--whiteColor); /* Change text color on hover */
+  }
+
+  .icon {
+    font-size: 1.2rem;
+    margin-left: 0.5rem;
+  }
+
+  /* Style for the "GET STARTED" text */
+  .btn span {
+    font-weight: 900; /* Increase font weight for boldness */
+    color: var(--whiteColor); /* Set text color to white */
+  }
+
+
+  .spacer {
+    height: 100px;
+    width: 100px; /* Adjust the height of the gap */
+  }
+}

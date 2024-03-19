@@ -1,0 +1,56 @@
+:root {
+  --primaryColor: hsl(14, 90%, 53%);
+  --primaryColorLight: hsl(14, 96%, 91%);
+  --bgColor: hsl(0, 0%, 100%);
+  --formColor: hsl(20, 42%, 87%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --greyText: hsl(0, 0%, 51%);
+  --inputColor: hsl(330, 12%, 97%);
+  --cardColor: hsl(300, 3%, 94%);
+
+  --biggestFontSize: 2.5rem;
+  --h1FontSize: 2rem;
+  --h2FontSize: 1.25rem;
+  --h3FontSize: 1rem;
+  --normalFontSize: 0.938rem;
+  --smallFontSize: 0.813rem;
+  --borderRadius: 3rem;
+}
+.middle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center align vertically */
+}
+
+.middle .secContainer .grid {
+  display: flex;
+  flex-wrap: wrap; /* Allow content to wrap */
+  justify-content: center;
+  gap: 20px; /* Adjust the gap between boxes */
+}
+
+.middle .box {
+  width: 200px; /* Adjust box width */
+  height: 200px; /* Adjust box height */
+  background-color: hsl(14, 69%, 54%); /* Set unique box color */
+  border-radius: 20px; /* Add border radius for rounded corners */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Adjust padding */
+}
+
+.middle h1 {
+  font-size: 24px; /* Adjust heading font size */
+  font-weight: bold; /* Make heading bold */
+  margin-bottom: 10px;
+}
+
+.middle p {
+  font-size: 16px; /* Adjust paragraph font size */
+  opacity: 0.8;
+  text-align: center; /* Center-align paragraph text */
+}
